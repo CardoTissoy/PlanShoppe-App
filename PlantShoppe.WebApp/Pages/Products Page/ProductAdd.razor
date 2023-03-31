@@ -1,0 +1,68 @@
+﻿@page "/add"
+@inherits ProductAddClass
+
+
+
+@if (ProductId == null)
+{
+    <PageTitle> Create a new Employee </PageTitle>
+    <h3> Create a new Employee </h3>
+}
+else
+{
+    if (!Saved)
+    {
+        <section class="employee-details">
+            <h2 class="page-title">Add New Employee Details</h2>
+
+            <EditForm Model="ProductView" OnValidSubmit="@HandleValidSubmit" OnInvalidSubmit="@HandleInvalidSubmit">
+                <DataAnnotationsValidator />
+                    <div class="form-group row">
+                        <label for="ProductName" class="col-sm-3">Product Name:</label>
+                        <InputText id="ProductName" class="form-control col-sm-8" @bind-Value="@ProductView.ProductName" placeholder="Enter First name"></InputText>
+                        <ValidationMessage For="@(() => ProductView.ProductName)" />
+                    </div>
+                    <div class="form-group row">
+                        <label for="ProductDescription" class="col-sm-3">Product Description:</label>
+                        <InputText id="ProductDescription" class="form-control col-sm-8" @bind-Value="@ProductView.ProductDescription" placeholder="Enter Product Description "></InputText>
+                        <ValidationMessage For="@(() => ProductView.ProductDescription)" />
+                    </div>
+                    <div class="form-group row">
+                        <label for="ProductType" class="col-sm-3">Product Type:</label>
+                        <InputSelect id="ProductType" class="form-control col-sm-8" @bind-Value="@ProductView.ProductType" placeholder="Enter Product Type">
+                            <option>Flowers</option>
+                            <option>Ornamental Grasses</option>
+                            <option>Landscaping Trees and Shrubs</option>
+                            <option>Herbs</option>
+                            <option>Microgreens</option>
+                        </InputSelect>
+                        <ValidationMessage For="@(() => ProductView.ProductType)" />
+                    </div>
+
+                    @*<div class="form-group row">
+                    <label for="ProductPhoto" class="col-sm-3">File Upload:</label>
+                    <InputFile OnChange="@HandleFileInputChanged" accept="@AcceptedFileFormat"/>
+                    @if (ImageUpload.Any())
+                    @foreach (var file in ImageUpload)
+                    {
+                    <img src="@file.ImageString" class="card-img-top"/>
+                    }
+                    </div>*@
+
+                <ValidationSummary />
+                <br />
+                <button type="submit" class="btn  btn-success" @onclick="AddProduct" disabled="@(!context.Validate())"> Add Product </button>
+                <NavLink class="nav-link" href="@("productsoverview")">
+                    <span class="oi oi-media-step-backward" aria-hidden="true"></span> Back Menu
+                </NavLink>
+
+
+            </EditForm>
+        </section>
+
+    }
+    else
+    {
+        <div class="alert @Status">@Message</div>
+    }
+}

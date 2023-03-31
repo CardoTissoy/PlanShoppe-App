@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PlantShoppe.WebApp
+build_property.RootNamespace = PlantShoppe.WebApp
+build_property.ProjectDir = C:\Users\ricardo.piquero.jr\source\repos\PlantShoppe.WebApp\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ricardo.piquero.jr\source\repos\PlantShoppe.WebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Pages/Products Page/ProductAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHMgUGFnZVxQcm9kdWN0QWRkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Pages/Products Page/ProductDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHMgUGFnZVxQcm9kdWN0RGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Pages/Products Page/ProductsOverview.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHMgUGFnZVxQcm9kdWN0c092ZXJ2aWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-6dyhiddg8b
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1g7sb9rrlw
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Areas/Identity/Pages/Account/LogOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dPdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Areas/Identity/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ricardo.piquero.jr/source/repos/PlantShoppe.WebApp/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
