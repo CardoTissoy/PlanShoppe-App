@@ -10,14 +10,21 @@ namespace PlantShoppe.WebApp.Pages.Products_Page
 {
     public class ProductAddClass : ComponentBase
     {
-
+        [Parameter]
+        public string ProductId { get; set; } = string.Empty;
         public ProductsViewModel ProductView { get; set; } = new ProductsViewModel();
+        
+        // Inject dependencies
         [Inject]
         public NavigationManager _navigationManager { get; set; } = null!;
         [Inject]
         public IProductRepository _productRepository { get; set; } = null!;
         [Inject]
         public HttpClient _httpClient { get; set; } = null!;
+
+
+        protected string text = string.Empty;
+        protected int MAX_TEXT_COUNT = 255;
 
         // used to store state of screen
         protected string Message = string.Empty;
@@ -26,9 +33,7 @@ namespace PlantShoppe.WebApp.Pages.Products_Page
 
         public string btnText = string.Empty;
 
-        [Parameter]
-        public string ProductId { get; set; } = string.Empty;
-        public ProductsModel Product { get; set; } = new ProductsModel();
+        
 
         // Upload Photo
         [Parameter]
@@ -49,14 +54,8 @@ namespace PlantShoppe.WebApp.Pages.Products_Page
                 Message = "New message has been added";
                 Saved = true;
             }
-            else
-            {
-                await _productRepository.UpdateProduct(Product);
-                Status = "alert-success";
-                Message = "New message has been updated";
-                Saved = true;
-            }
         }
+
         // Handles invalid data submission
         protected void HandleInvalidSubmit()
         {
@@ -64,6 +63,7 @@ namespace PlantShoppe.WebApp.Pages.Products_Page
             Message = "There are some validation errors. Please try again.";
         }
 
+        // Handles Upload Image
         public async Task HandleFileInputChanged(InputFileChangeEventArgs e)
         {
 
@@ -90,7 +90,6 @@ namespace PlantShoppe.WebApp.Pages.Products_Page
         {
             return $"data: {contentType}; base64, {Convert.ToBase64String(content)}";
         }
-
         public async Task UploadImage()
         {
             using var formData = new MultipartFormDataContent();

@@ -77,9 +77,10 @@ namespace PlantShoppe.WebApp.Services
             }
                 
         }
-        public async Task UpdateProduct(ProductsModel product)
+        public async Task UpdateProduct(ProductsModel products)
         {
-            var updateProduct = await _httpClient.PutAsJsonAsync($"/api/Product", product);
+
+            var updateProduct = await _httpClient.PutAsJsonAsync($"/api/Product", products);
 
             HttpResponseMessage response = updateProduct;
             try

@@ -1,6 +1,7 @@
 ﻿@page "/details"
 @page "/details/{ProductId}"
 @inherits ProductDetailsClass
+@inject NavigationManager _nav
 
 @if (ProductId == null)
 {
@@ -20,18 +21,21 @@ else
             </div>
             <div class="form-group row">
                 <label for="ProductType" class="col-sm-3">Product Type:</label>
-                <InputSelect id="ProductType" class="form-control col-sm-8" @bind-Value="@Product.ProductType" placeholder="Select your plant type"> </InputSelect>
+                <InputSelect id="ProductType" class="form-control col-sm-8" @bind-Value="@Product.ProductType" placeholder="Select Product Type">
+                    <option>Select Product ...</option>
+                    <option>Flowers</option>
+                    <option>Ornamental Grasses</option>
+                    <option>Landscaping Trees and Shrubs</option>
+                    <option>Herbs</option>
+                    <option>Microgreens</option>
+                </InputSelect>
             </div>
             <div class="form-group row">
                 <label for="ProductDescription" class="col-sm-3">Product Description:</label>
                 <InputTextArea id="ProductDescription" class="form-control col-sm-8" @bind-Value="@Product.ProductDescription" placeholder="Enter product description"></InputTextArea>
             </div>
-
-
-
-            <NavLink class="nav-link" href="@("productsoverview")">
-                    <span class="oi oi-media-step-backward" aria-hidden="true"></span> Back Menu
-                </NavLink>
+            <br>
+             <button class="btn  btn-danger" @onclick="@(()=>_nav.NavigateTo("productsoverview"))">Back</button>
             </EditForm>
     </section>
 }

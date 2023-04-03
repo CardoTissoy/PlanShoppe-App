@@ -9,7 +9,13 @@
 
     <main>
         <div class="top-row px-4 auth">
-            <LoginDisplay />
+            <NavLink class="nav-link" href="/identity/account/login">
+                <span class="oi oi-lock-locked" aria-hidden="true"></span> Login
+            </NavLink>
+            <NavLink class="nav-link" href="/identity/account/logout">
+                <span class="oi oi-power-standby" aria-hidden="true"></span> Logout
+            </NavLink>
+           
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
         </div>
 
